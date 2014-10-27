@@ -1,25 +1,26 @@
-dox-docco
+doxxo
 =========
 
-A [docco](http://jashkenas.github.com/docco/)-like formatter for the [dox](https://github.com/visionmedia/dox) comment parser using [Dust.js](http://akdubya.github.com/dustjs/)
+A fork of [dox-docco](https://github.com/aearly/dox-docco), which is a [docco](http://jashkenas.github.com/docco/)-like formatter for the [dox](https://github.com/visionmedia/dox) comment parser using [Dust.js](http://akdubya.github.com/dustjs/)
 
-[![Build Status](https://travis-ci.org/aearly/dox-docco.png)](https://travis-ci.org/aearly/dox-docco)
+How does this differ from dox-docco?
+--------------------------------
+
+The dependence upon pygments and python has been removed, doxxo fixes a few issues with dox-docco related to parameters and adds some extra readability improvements.
+
+How does this differ from Docco?
+--------------------------------
+
+Dox parses block style JS comments,  while Docco parses single-line comments.  In effect, this is Docco for block-style comments.  I also wanted to create an example Dox template using Dust.js.  This basically glues these 3 technologies together.
 
 Install
 -------
-`npm install -g dox-docco`
-
-For pygments support, install `python-setuptools`, then
-
-`sudo easy_install pygments`
-
-If pygments is not installed, syntax highlighting will be skipped.
-
+`npm install -g doxxo`
 
 Usage
 -----
 ```
-Usage: dox-docco [options]
+Usage: doxxo [options]
 
 Options:
 
@@ -31,8 +32,3 @@ Options:
   -t, --template [template]  The dust template to use.  Default is static/template.html.
   --title [title]            The title of the output document.  Deafult is the input file name, or '' for stdin
 ```
-
-How does this differ from Docco?
---------------------------------
-
-Dox parses block style JS comments,  while Docco parses single-line comments.  In effect, this is Docco for block-style comments.  I also wanted to create an example Dox template using Dust.js.  This basically glues these 3 technologies together.
