@@ -10,11 +10,11 @@ options
   .version(JSON.parse(fs.readFileSync(join(__dirname, '..', 'package.json'))).version)
   .option('-o, --outfile [outfile]', 'the file to output to.  Default is stdout')
   .option('-i, --infile [infile]', 'the file to read in.  Deafult is stdin')
-  .option('-c, --css [css]', 'The css file to use.  Default is github hosted static/docco.css.')
+  .option('-b, --behavior [behavior]', 'The behavior js file to use.  Default is github hosted.')
+  .option('-c, --css [css]', 'The css file to use.  Default is github hosted.')
   .option('-t, --template [template]', 'The dust template to use.  Default is static/template.html.')
   .option('--title [title]', 'The title of the output document.  Deafult is the input file name, or \'\' for stdin')
   .parse(process.argv);
-
 
 if (options.infile) {
   options.buffer = fs.readFileSync(options.infile) + '';

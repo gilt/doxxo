@@ -1,71 +1,76 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>
-    {{title}}
-  </title>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" media="all" href="{{css}}" />
+  <title>{{title}}</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="doxxo-relative-root" content="{{relativeRoot}}">
+  <meta name="doxxo-github-url" content="https://github.com/gilt/doxxo">
+
+  <link rel="stylesheet" type="text/css" media="all" href="{{assetRoot}}/css/style.css">
+
+  <script type="text/javascript" src="{{assetRoot}}/js/behavior.js"></script>
 </head>
 
 <body>
-  <div id="container">
-    <div id="background">
+  <section id="meta">
+    <div class="file-path">
+      <a href="{{file.url}}">{{file.path}}</a>
     </div>
-    <table cellpadding="0" cellspacing="0">
-      <thead>
-        <tr>
-          <th class="docs">
-            <h1>
-              {{title}}
-            </h1>
-          </th>
-          <th class="code">
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each entries}}
-        <tr id="section-{@idx}{.}{/idx}">
-          <td class="docs">
-            <div class="pilwrap">
-              <a class="pilcrow" href="#section-{{@index}}">&#182;</a>
-            </div>
-            {{{description.full}}}
-            {{#if tags}}
-            <table class="tags">
-              <tbody>
-                {{#each tags}}
-                <tr>
-                  <td>
-                    <small>
-                      <strong>{{type}}</strong>
-                      {{#types}} [{{.}}]{{/types}}
-                    </small>
-                  </td>
-                  <td>
-                    <strong>{{name}}</strong>
-                  </td>
-                  <td>{{description}}</td>
-                </tr>
-                {{/each}}
-              </tbody>
-            </table>
-            {{/if}}
-          </td>
-          <td class="code">
-            <div class="highlight">
-              <pre lang="javascript">
-{{{code}}}
-              </pre>
-            </div>
-          </td>
-        </tr>
-        {{/each}}
-      </tbody>
-    </table>
-  </div>
-</body>
+  </section>
+  <section id="document">
 
+  {{#each blocks}}
+    <a name="section-{@idx}{.}{/idx}"></a>
+    <div class="pilwrap">
+      <a class="pilcrow" href="#section-{{@index}}">&#182;</a>
+    </div>
+
+    <article class="segment">
+      <div class="comments ">
+        <div class="wrapper">
+          {{#if ctx}}
+          <p><span class="doc-section-header">{{#scope}}{{.}}{{/scope}}{{#if isConstructor}} constructor{{/if}} {{type}} {{ctx.name}}</span></p>
+          {{/if}}
+
+          {{#if description}}
+          <p>{{description}}</p>
+          {{/if}}
+
+          {{#if parameters}}
+          <p>Parameters:</p>
+          <ul>
+            {{#each parameters}}
+            <li>
+              <strong>
+                {{name}}{{#if type}} must be of {{type}}.{{/if}}
+              </strong>
+              {{#description}}<br>({{.}}){{/description}}
+            </li>
+            {{/each}}
+          </ul>
+          {{/if}}
+
+          {{#if returns}}
+          <p>
+            <strong>Returns a {{returns.type}}</strong>
+            {{#returns.description}}<br>({{.}}){{/returns.description}}
+          </p>
+          {{/if}}
+        </div>
+      </div>
+      <div class="code">
+        <div class="wrapper">
+          <pre lang="javascript">
+{{{code}}}
+          </pre>
+        </div>
+      </div>
+    </article>
+  {{/each}}
+
+  </section>
+
+</body>
 </html>

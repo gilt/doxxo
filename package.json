@@ -24,7 +24,7 @@
   "license": "MIT",
   "dependencies": {
     "commander": "~2.1.0",
-    "dox": "~0.4.1",
+    "dox": "*",
     "handlebars": "*",
     "highlight.js": "*",
     "underscore": "*"
