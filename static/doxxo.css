@@ -81,10 +81,6 @@ body{
   white-space:normal
 }
 
-.segment .code{
-  white-space:pre
-}
-
 #meta{
   position:absolute;
   left:33em;
