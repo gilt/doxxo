@@ -1326,7 +1326,7 @@ nav.searching .toc .discloser{
 }
 
 html{
-  background:#4a525a
+  background: #23241f;
 }
 
 #document{
@@ -1389,6 +1389,14 @@ html{
   display:block;
   padding:0.5em
 }*/
+
+.code .wrapper .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #23241f;
+  -webkit-text-size-adjust: none;
+}
 
 @media (max-width: 45.05em){
   .code{
