@@ -1,16 +1,16 @@
 {
-  "name": "dox-docco",
-  "version": "0.2.0",
-  "description": "A docco-like formatter for the dox comment parser",
-  "main": "lib/dox-docco.js",
-  "bin": "bin/dox-docco",
+  "name": "doxxo",
+  "version": "0.0.1",
+  "description": "A docco-like formatter for the dox comment parser.",
+  "main": "lib/doxxo.js",
+  "bin": "bin/doxxo",
   "preferGlobal": true,
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/aearly/dox-docco.git"
+    "url": "git://github.com/gilt/doxx.git"
   },
   "keywords": [
     "comments",
@@ -20,14 +20,14 @@
     "template",
     "dust"
   ],
-  "author": "Alexander Early <alexander.early@gmail.com>",
+  "author": "Gilt <frontend@gilt.com>",
   "license": "MIT",
   "dependencies": {
-    "dox": "~0.4.1",
-    "dust.js": "~0.1.0",
     "commander": "~2.1.0",
-    "lodash": "~2.4.1",
-    "async": "~0.2.9"
+    "dox": "~0.4.1",
+    "handlebars": "*",
+    "highlight.js": "*",
+    "underscore": "*"
   },
   "devDependencies": {
     "expect.js": "~0.2.0",
