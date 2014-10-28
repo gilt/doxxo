@@ -1115,10 +1115,9 @@ nav .toc .children,nav .toc .outline{
   display:none
 }
 
-nav .toc .expanded&gt;
-.children,nav .toc .expanded&gt;
-.outline,nav .toc .expanded&gt;
-.outline .children{
+nav .toc .expanded > .children,
+nav .toc .expanded > .outline,
+nav .toc .expanded > .outline .children{
   display:block
 }
 
@@ -1146,40 +1145,34 @@ nav .toc .discloser{
   background-size:9px 9px
 }
 
-nav .toc .discloser.placeholder,nav .toc .expanded&gt;
-.outline .discloser{
+nav .toc .discloser.placeholder,nav .toc .expanded > .outline .discloser{
   background:none
 }
 
-nav .toc .expanded&gt;
-.label .discloser{
+nav .toc .expanded > .label .discloser{
   -moz-transform:rotate(90deg);
   -ms-transform:rotate(90deg);
   -webkit-transform:rotate(90deg);
   transform:rotate(90deg)
 }
 
-nav .toc .filtered&gt;
-.label{
+nav .toc .filtered > .label{
   display:none
 }
 
-nav .toc .matched-child&gt;
-.label{
+nav .toc .matched-child > .label{
   display:block
 }
 
-nav .toc .matched-child&gt;
-.children,nav .toc .matched-child&gt;
-.outline,nav .toc .matched-child&gt;
-.outline .children{
+nav .toc .matched-child > .children,
+nav .toc .matched-child > .outline,
+nav .toc .matched-child > .outline .children{
   display:block
 }
 
-nav .toc .matched&gt;
-.children,nav .toc .matched&gt;
-.outline,nav .toc .matched&gt;
-.outline .children{
+nav .toc .matched > .children,
+nav .toc .matched > .outline,
+nav .toc .matched > .outline .children{
   display:block
 }
 
@@ -1230,13 +1223,11 @@ nav.searching .toc .discloser{
   margin:1em 0
 }
 
-.comments .wrapper&gt;
-*:first-child{
+.comments .wrapper > *:first-child{
   margin-top:0
 }
 
-.comments .wrapper&gt;
-*:last-child{
+.comments .wrapper > *:last-child{
   margin-bottom:0
 }
 
@@ -1347,8 +1338,7 @@ html{
   }
 }
 
-#meta&gt;
-*{
+#meta > * {
   font-family:"Helvetica Neue",Helvetica,"Droid Sans",sans-serif;
   font-weight:300;
   font-size:0.9375em;
@@ -1356,18 +1346,16 @@ html{
   text-shadow:#272c30 1px 1px 0
 }
 
-#meta&gt;
-*,#meta&gt;
-* a{
+#meta > *,
+#meta > * a {
   color:#9faab7
 }
 
-#meta&gt;
-* a{
+#meta > * a {
   text-decoration:none
 }
 
-.comments .wrapper{
+.comments .wrapper {
   font-family:"Helvetica Neue",Helvetica,"Droid Sans",sans-serif;
   font-weight:300;
   font-size:0.9375em;
@@ -1376,7 +1364,7 @@ html{
   color:#4a525a
 }
 
-.code .wrapper{
+.code .wrapper {
   font-family:"Droid Sans Mono",Menlo,Monaco,monospace;
   font-size:0.75em;
   line-height:1.4;
@@ -1562,13 +1550,11 @@ nav .toc .label:hover{
   background:rgba(205,205,205,0.9)
 }
 
-nav .toc .file&gt;
-.label{
+nav .toc .file > .label{
   font-weight:bold
 }
 
-nav .toc .selected&gt;
-.label{
+nav .toc .selected > .label{
   background:#f5fbff
 }
 
@@ -1576,13 +1562,11 @@ nav .toc .label em{
   font-weight:bold
 }
 
-nav .toc .file&gt;
-.label em{
+nav .toc .file > .label em{
   color:#101214
 }
 
-nav .toc .matched-child&gt;
-.label{
+nav .toc .matched-child > .label{
   filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity:0.65;
   text-shadow:none;
