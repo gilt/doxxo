@@ -1384,59 +1384,11 @@ html{
   color:#cbd1d8
 }
 
+/*
 .code .wrapper .hljs{
   display:block;
   padding:0.5em
-}
-
-.code .wrapper .hljs-comment,.code .wrapper .hljs-template_comment,.code .wrapper .diff .hljs-header,.code .wrapper .hljs-doctype,.code .wrapper .hljs-pi,.code .wrapper .lisp .hljs-string,.code .wrapper .hljs-javadoc{
-  color:#b1bac4;
-  font-style:italic
-}
-
-.code .wrapper .hljs-keyword,.code .wrapper .hljs-winutils,.code .wrapper .method,.code .wrapper .hljs-addition,.code .wrapper .css .hljs-tag,.code .wrapper .hljs-request,.code .wrapper .hljs-status,.code .wrapper .nginx .hljs-title{
-  color:#e0c090
-}
-
-.code .wrapper .hljs-string{
-  color:#e9baba
-}
-
-.code .wrapper .hljs-property{
-  color:#b9d0af
-}
-
-.code .wrapper .hljs-function{
-  color:#abd9cf
-}
-
-.code .wrapper .hljs-class{
-  color:#cee4dd
-}
-
-.code .wrapper .hljs-number,.code .wrapper .hljs-command,.code .wrapper .hljs-tag .hljs-value,.code .wrapper .hljs-rules .hljs-value,.code .wrapper .hljs-phpdoc,.code .wrapper .tex .hljs-formula,.code .wrapper .hljs-regexp,.code .wrapper .hljs-hexcolor{
-  color:#cba8d6
-}
-
-.code .wrapper .hljs-title,.code .wrapper .hljs-localvars,.code .wrapper .hljs-chunk,.code .wrapper .hljs-decorator,.code .wrapper .hljs-built_in,.code .wrapper .hljs-identifier,.code .wrapper .vhdl .hljs-literal,.code .wrapper .hljs-id,.code .wrapper .css .hljs-function{
-  color:#a9c2ba
-}
-
-.code .wrapper .hljs-attribute,.code .wrapper .hljs-variable,.code .wrapper .lisp .hljs-body,.code .wrapper .smalltalk .hljs-number,.code .wrapper .hljs-constant,.code .wrapper .hljs-class .hljs-title,.code .wrapper .hljs-parent,.code .wrapper .haskell .hljs-type{
-  color:#b9d0af
-}
-
-.code .wrapper .hljs-preprocessor,.code .wrapper .hljs-preprocessor .hljs-keyword,.code .wrapper .hljs-pragma,.code .wrapper .hljs-shebang,.code .wrapper .hljs-symbol,.code .wrapper .hljs-symbol .hljs-string,.code .wrapper .diff .hljs-change,.code .wrapper .hljs-special,.code .wrapper .hljs-attr_selector,.code .wrapper .hljs-important,.code .wrapper .hljs-subst,.code .wrapper .hljs-cdata,.code .wrapper .clojure .hljs-title,.code .wrapper .css .hljs-pseudo{
-  color:#cee4dd
-}
-
-.code .wrapper .hljs-deletion{
-  color:#dc322f
-}
-
-.code .wrapper .tex .hljs-formula{
-  background:#e9baba
-}
+}*/
 
 @media (max-width: 45.05em){
   .code{
