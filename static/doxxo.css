@@ -62,10 +62,6 @@ body{
   position: relative;
 }
 
-.segment:first-child {
-  padding-top:4.1em
-}
-
 .segment:last-child{
   padding-bottom:2em
 }
@@ -1192,11 +1188,12 @@ nav.searching .toc .discloser{
   display:none
 }
 
-.comments .wrapper{
-  font-family:"Helvetica Neue",Helvetica,"Droid Sans",sans-serif;
-  font-weight:300;
-  font-size:0.9375em;
-  line-height:1.35
+.comments .wrapper {
+  font-family: "Helvetica Neue",Helvetica,"Droid Sans",sans-serif;
+  font-weight: 300;
+  font-size: 0.9375em;
+  line-height: 1.35;
+  padding-bottom: 1em;
 }
 
 .comments .wrapper h1,.comments .wrapper h2,.comments .wrapper h3,.comments .wrapper h4,.comments .wrapper h5,.comments .wrapper h6{
@@ -1342,7 +1339,7 @@ html{
   background:#f5fbff -webkit-linear-gradient(left, #000,#121110 0.3em,#23241f 1em) 33em no-repeat;
   background:#f5fbff linear-gradient(to right, #000,#121110 0.3em,#23241f 1em) 33em no-repeat;
   margin-right: -1em;
-  padding: 2em 1em 0 0;
+  padding: 4.1em 1em 0 0;
 }
 
 @media (max-width: 45.05em){
