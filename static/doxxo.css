@@ -56,13 +56,13 @@ body{
   max-width:33em
 }
 
-.segment{
-  padding:0.5em 0 0.5em 33em;
-  white-space:nowrap
+.segment {
+  padding: 0.5em 0 0.5em 33em;
+  white-space: nowrap;
   position: relative;
 }
 
-.segment:first-child{
+.segment:first-child {
   padding-top:4.1em
 }
 
@@ -73,7 +73,7 @@ body{
 .segment .comments,.segment .code{
   display:inline-block;
   vertical-align:top;
-  padding:0 2em
+  padding: 0 2em
 }
 
 .segment .comments{
@@ -1233,7 +1233,6 @@ nav.searching .toc .discloser{
 
 .comments .wrapper p{
   margin: 1em 0;
-  padding: 1em 0;
 }
 
 .comments .wrapper >
@@ -1342,8 +1341,8 @@ html{
   background:#f5fbff -moz-linear-gradient(left, #000,#121110 0.3em,#23241f 1em) 33em no-repeat;
   background:#f5fbff -webkit-linear-gradient(left, #000,#121110 0.3em,#23241f 1em) 33em no-repeat;
   background:#f5fbff linear-gradient(to right, #000,#121110 0.3em,#23241f 1em) 33em no-repeat;
-  margin-right:-1em;
-  padding-right:1em
+  margin-right: -1em;
+  padding: 2em 1em 0 0;
 }
 
 @media (max-width: 45.05em){

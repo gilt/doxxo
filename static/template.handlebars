@@ -27,17 +27,33 @@
     <a name="section-{{@index}}"></a>
     <article class="segment">
       <a class="pilcrow" href="#section-{{@index}}">&#182;</a>
-      <div class="comments ">
+      <div class="comments{{#if docSection}} doc-section{{/if}}{{#if isPrivate}} doc-section-private{{/if}}">
         <div class="wrapper">
-          {{#if ctx}}
+        {{#if ctx}}
           <p><span class="doc-section-header">{{#scope}}{{.}}{{/scope}}{{#if isConstructor}} constructor{{/if}} {{type}} {{ctx.name}}</span></p>
-          {{/if}}
+        {{/if}}
 
-          {{#if description.full}}
-          <p>{{description.full}}</p>
-          {{/if}}
+        {{#if module}}
+          <p><span class="doc-section-header">Module {{module}}</span></p>
+        {{/if}}
 
-          {{#if parameters}}
+        {{#if description.full}}
+          <p><span class="desc">{{description.full}}</span></p>
+        {{/if}}
+
+        {{#if notes}}
+          <p>Notes:</p>
+          {{#each notes}}
+          {{{.}}}
+          {{/each}}
+        {{/if}}
+
+        {{#if howto}}
+          <p>How-To:</p>
+          {{{howto}}}
+        {{/if}}
+
+        {{#if parameters}}
           <p>Parameters:</p>
           <ul>
             {{#each parameters}}
@@ -49,14 +65,25 @@
             </li>
             {{/each}}
           </ul>
-          {{/if}}
+        {{/if}}
 
-          {{#if returns}}
+        {{#if returns}}
           <p>
             <strong>Returns a {{returns.type}}</strong>
             {{#returns.description}}<br>({{.}}){{/returns.description}}
           </p>
-          {{/if}}
+        {{/if}}
+
+        {{#if examples}}
+          {{#each examples}}
+          <pre>
+            <code>
+              <p>Example:</p>
+            </code>
+          </pre>
+          {{{.}}}
+          {{/each}}
+        {{/if}}
         </div>
       </div>
       <div class="code">

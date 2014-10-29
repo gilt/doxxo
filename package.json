@@ -27,6 +27,7 @@
     "dox": "*",
     "handlebars": "*",
     "highlight.js": "*",
+    "markdown": "*",
     "underscore": "*"
   },
   "devDependencies": {
