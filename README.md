@@ -16,7 +16,7 @@ Firstly, groc is CoffeeScript, doxxo is straight up Javascript. doxxo makes use 
 How does this differ from Docco?
 --------------------------------
 
-Dox parses block style JS comments,  while Docco parses single-line comments.  In effect, this is Docco for block-style comments.  I also wanted to create an example Dox template using Dust.js.  This basically glues these 3 technologies together.
+Dox parses block style JS comments, while Docco parses single-line comments. In effect, this is Docco for block-style comments. We also wanted to create an example Dox template using Handlebars templates.This basically glues these 3 technologies together.
 
 Install
 -------
