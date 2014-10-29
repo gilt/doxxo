@@ -59,6 +59,7 @@ body{
 .segment{
   padding:0.5em 0 0.5em 33em;
   white-space:nowrap
+  position: relative;
 }
 
 .segment:first-child{
@@ -1693,10 +1694,6 @@ input[type="search"]{
 
 .code.folded .marker .c1:after{
   content:" …"
-}
-
-.pilwrap {
-  position: relative;
 }
 
 .pilcrow {
