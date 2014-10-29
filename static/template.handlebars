@@ -25,11 +25,10 @@
 
   {{#each blocks}}
     <a name="section-{{@index}}"></a>
-    <div class="pilwrap">
-      <a class="pilcrow" href="#section-{{@index}}">&#182;</a>
-    </div>
-
     <article class="segment">
+      <div class="pilwrap">
+        <a class="pilcrow" href="#section-{{@index}}">&#182;</a>
+      </div>
       <div class="comments ">
         <div class="wrapper">
           {{#if ctx}}
