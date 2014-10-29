@@ -58,10 +58,8 @@
           <ul>
             {{#each parameters}}
             <li>
-              <strong>
-                {{name}}{{#if type}} must be of {{type}}.{{/if}}
-              </strong>
-              {{#description}}<br>({{.}}){{/description}}
+              <strong>{{name}}</strong>{{#if type}} must be of type <strong>{{type}}</strong>.{{/if}}
+              {{#if description}}<br>({{description}}){{/if}}
             </li>
             {{/each}}
           </ul>
@@ -70,18 +68,18 @@
         {{#if returns}}
           <p>
             <strong>Returns a {{returns.type}}</strong>
-            {{#returns.description}}<br>({{.}}){{/returns.description}}
+            {{#if returns.description}}<br>({{returns.description}}){{/if}}
           </p>
         {{/if}}
 
         {{#if examples}}
+          <p>Examples:</p>
           {{#each examples}}
           <pre>
-            <code>
-              <p>Example:</p>
-            </code>
+<code>
+{{.}}
+</code>
           </pre>
-          {{{.}}}
           {{/each}}
         {{/if}}
         </div>

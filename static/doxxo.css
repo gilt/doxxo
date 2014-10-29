@@ -1349,33 +1349,30 @@ html{
   }
 }
 
-#meta >
-*{
-  font-family:"Helvetica Neue",Helvetica,"Droid Sans",sans-serif;
-  font-weight:300;
-  font-size:0.9375em;
-  line-height:1.35;
-  text-shadow:#272c30 1px 1px 0
+#meta > * {
+  font-family: "Helvetica Neue",Helvetica,"Droid Sans",sans-serif;
+  font-weight: 300;
+  font-size: 0.9375em;
+  line-height: 1.35;
+  text-shadow: #272c30 1px 1px 0;
 }
 
-#meta >
-*,#meta >
-* a{
-  color:#9faab7
+#meta > *,
+#meta >* a {
+  color: #ccc;
 }
 
-#meta >
-* a{
+#meta > * a {
   text-decoration:none
 }
 
-.comments .wrapper{
+.comments .wrapper {
   font-family:"Helvetica Neue",Helvetica,"Droid Sans",sans-serif;
   font-weight:300;
   font-size:0.9375em;
   line-height:1.35;
   text-shadow:#fff 1px 1px 0;
-  color:#4a525a
+  color:#4a525a;
 }
 
 .code .wrapper{
