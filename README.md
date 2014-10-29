@@ -1,12 +1,17 @@
 doxxo
 =========
 
-A fork of [dox-docco](https://github.com/aearly/dox-docco), which is a [docco](http://jashkenas.github.com/docco/)-like formatter for the [dox](https://github.com/visionmedia/dox) comment parser using [Dust.js](http://akdubya.github.com/dustjs/)
+A fork of [dox-docco](https://github.com/aearly/dox-docco), which is a [docco](http://jashkenas.github.com/docco/)-like formatter for the [dox](https://github.com/visionmedia/dox) comment parser using [Handlebars.js](http://handlebarsjs.com/).
 
 How does this differ from dox-docco?
 --------------------------------
 
-The dependence upon pygments and python has been removed, doxxo fixes a few issues with dox-docco related to parameters and adds some extra readability improvements.
+The dependence upon pygments and python has been removed, doxxo fixes a few issues with dox-docco related to parameters and adds some extra readability improvements. doxxo also uses Handlebars instead of Dust.js templates, because we dig Handlebars.
+
+How does this differ from [groc](https://github.com/nevir/groc)?
+--------------------------------
+
+Firstly, groc is CoffeeScript, doxxo is straight up Javascript. doxxo makes use of a large chunk of the groc [default style](https://github.com/nevir/groc/tree/master/lib/styles/default) but with a ton of modifications. doxxo also only offers [highlight.js](https://highlightjs.org) syntax highlighting, which makes changing styles/themes really easy.
 
 How does this differ from Docco?
 --------------------------------
@@ -15,7 +20,7 @@ Dox parses block style JS comments,  while Docco parses single-line comments.  I
 
 Install
 -------
-`npm install -g doxxo`
+```npm install -g doxxo```
 
 Usage
 -----
@@ -24,11 +29,13 @@ Usage: doxxo [options]
 
 Options:
 
-  -h, --help                 output usage information
-  -V, --version              output the version number
-  -o, --outfile [outfile]    the file to output to.  Default is stdout
-  -i, --infile [infile]      the file to read in.  Deafult is stdin
-  -c, --css [css]            The css file to use.  Default is github hosted static/docco.css.
-  -t, --template [template]  The dust template to use.  Default is static/template.html.
-  --title [title]            The title of the output document.  Deafult is the input file name, or '' for stdin
+  -h, --help      Output usage information
+  -V, --version   Output the version number
+  --out           The file to output to.  Default is stdout')
+  --in            The file to read in.  Deafult is stdin')
+  --behavior      The behavior js file to use.  Default is github hosted.')
+  --style         The style css file to use.  Default is github hosted.')
+  --syntax        The syntax highlighting (highlight.js) css file to use.  Default is github hosted.')
+  --template      The handlebars template to use.  Default is static/template.handlebars.')
+  --title         The title of the output document.  Deafult is the input file name, or '' for stdin
 ```
